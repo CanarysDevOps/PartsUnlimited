@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.2.0
       - name: Setup NuGet.exe
-        uses: NuGet/setup-nuget@v1.0.2
+        uses: NuGet/setup-nuget@v1.0.5
       - name: Setup MSbuild
         uses: microsoft/setup-msbuild@v1
       - name: NuGet restore
