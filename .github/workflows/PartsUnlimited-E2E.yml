@@ -52,7 +52,7 @@ jobs:
         run: expand-archive -path '*.zip' -destinationpath '.\webapp'
         shell: pwsh
       - name: Azure WebApp Deploy
-        uses: Azure/webapps-deploy@v2
+        uses: Azure/webapps-deploy@v2.1.6
         with:
           app-name: ${{env.WEB_APP_NAME}}
           publish-profile: ${{secrets.WEB_APP_PUBLISH_PROFILE}}
